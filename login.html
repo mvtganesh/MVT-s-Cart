@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/mvt's logo1.png " >
+    <title>MVT's Cart</title>
+    <style>
+        body{
+            background-color:aliceblue;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            height:720px;
+        }
+
+        .main{
+            display:grid;
+            grid-template-columns: 400px 400px;
+            grid-template-rows: 400px;
+            align-content: center;
+            
+        }
+        .p-grid-1{
+             background-color:azure;
+             border:4px inset gold;
+             text-align: center;
+             padding:20px 0px 50px 0px;
+        }
+        .grid-1{
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-template-rows:100px 100px ;
+            align-items: center;
+            justify-content: center;
+
+        }
+        #img-1{
+            width:60px;cursor: pointer;
+        }
+
+        .grid-2{
+            display:flex;
+            grid-template-columns: 100px 100px;
+            grid-template-rows:100px 100px ;
+            align-items: center;
+            justify-content: center;
+
+        }
+        #b2{
+            border: 2px solid gray;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:50px;
+            height:50px;
+            margin:10px;cursor: pointer;
+        }
+
+        .p-grid-2{
+             background-color:azure;
+             border:5px inset gold;
+             padding:20px 0px 50px 0px;
+             padding-left:10%;   
+             background-color: black;
+             color:white;
+        }
+        #c1{
+            font-size:30px;
+            font-weight:bold;
+        }
+       
+        #c2{
+            margin-top:-15px;
+        }
+        #c3{
+            width:80%;
+            height:35px;
+        }
+        #c3:focus{
+            color:black;
+            box-shadow: 0px 0px 5px 3px silver;
+            font-weight:bold;
+        }
+        #c4{
+            color:white;
+            background-color: red;
+            font-weight: bold;;
+            margin:10% 0% 2% 0%;
+            width:81.3%;
+            height:35px;cursor: pointer;
+        }
+        #c4:hover{
+            background-color: white;
+            color:red;
+            box-shadow: 0px 0px 5px 1px silver;
+        }
+        #c5{
+            margin-top:8%;
+            width:80%;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        #p-1{
+            color:red;
+        }
+        #p-1:hover{
+            color:blue;cursor: pointer;
+        }
+        .p-2:hover{
+            color:yellow;cursor: pointer;
+                }
+
+    </style>
+</head>
+<body>
+        <div class="main" >
+                <div class="p-grid-1">
+                    
+                     <p id="p-1" >Why choose Bigbasket?</p>
+                    
+                        <div class="grid-1" >
+                            <div id="b1" ><img id="img-1" src="assets/login/1.jpg"> </div>
+                            <div id="b1"><img id="img-1" src="assets/login/2.png"> </div>
+                            <div id="b1"  ><img id="img-1"  src="assets/login/3.webp"> </div>
+                            <div id="b1" ><img id="img-1" src="assets/login/4.png"> </div>
+                        </div>
+                        <div style="border: 2px solid gray;margin:4% 20% 5% 20%"></div>
+                
+                 <div class="grid-2" >
+                    <div id="p-1" >Find us on</div>
+                    <div id="b2" ><img id="img-2" width="35px" src="assets/login/5.png"> </div>
+                    <div id="b2" ><img id="img-2" width="30px" src="assets/login/6.webp"> </div>
+                   </div>
+
+                </div>
+          
+                <div class="p-grid-2">
+                <p id="c1" class="p-2" >Login/Sign Up</p>
+                <p id="c2" >Using OTP</p>
+                <div style="border:2px solid orange;width:50px;margin-top:-10px;margin-bottom:8%;" ></div>
+                <form  action="index.html" target="_blank" >
+                <input  type="text" required id="c3" placeholder="Enter Phone number/Email Id" ><br>
+                <button id="c4" >Continue</button>
+                <div id="c5" >
+                    By continuing, I accept TCP - mvt'organic-items's Terms and Conditions & Privacy Policy This site is protected by reCAPTCHA and the Google - Privacy Policy and & Terms of Service apply.
+                </div>
+                </form>
+                 </div>
+        </div>
+   
+</body>
+</html>

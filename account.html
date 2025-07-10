@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/mvt's logo1.png " >
+    <title>MVT's Cart</title>
+    <style>
+        .main{
+            border:3px solid gold;
+            display: grid;
+            align-items: center;
+            justify-content:left;
+            padding-left:20%;
+            height:720px;
+            background-image: url(assets/background-2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .main-div-total{
+            width:400px;
+            
+        }
+        .title{
+            text-align: center;
+        }
+        .input-main-div{
+            border:2px inset white;
+            padding:0% 10% 5% 10%;
+            margin-top:5%;
+            background-color:rgba(125, 129, 212, 0.537);
+            border-radius: 10px;
+            opacity:0.9;
+
+        }
+        #a1{
+            font-size:25px;font-weight:bold;color:gold;;
+        }
+        #b1{
+            font-size:20px;color:white;
+            padding:5% 0%
+        }
+        .z-a{
+            font-weight: bold;
+           
+        }
+        .z-b{
+             margin:2% 0%;text-align: center;width:80%;padding:2% 0%;
+        }
+        .z-a:hover{
+            color:red;cursor: pointer;
+        }
+        .z-a:active{
+            color:blue;
+        }
+        .z-b:focus{
+            box-shadow: 0px 0px 5px 4px silver;
+            font-weight: bold;
+        }
+        #z-c{
+            width:80%;padding:2% 0%;background-color:#ffd814 ;border: none;border-radius: 15px;font-weight: bold;margin:4% 0%;
+        }
+        #z-c:hover{
+            color:red;
+            background-color: white;box-shadow: 0px 0px 5px 4px silver;cursor: pointer;
+        }
+        #z-c:active{
+            color:blue;
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main-div-total">
+            <div class="title" id="a1">mvt's@Organic-Items</div>
+            <div>
+                <div class="input-main-div" >
+                       <div id="b1" >Sign in or create account</div>
+                       <form action="login.html" target="_blank">
+                            <label for="z1" class="z-a" >Enter Your Name</label><br>
+                            <input required type="text" id="z1" class="z-b" placeholder="Enter User Name"><br>
+                            <label for="z2" class="z-a" >Enter Your Mobile-number</label><br>
+                            <input required type="number" id="z2" class="z-b" placeholder="Enter User Phone Pumber"><br>
+                            <label for="z3" class="z-a" >Enter Your Email id</label><br>
+                            <input required type="email" id="z3" class="z-b" placeholder="Enter User Email id"><br>
+                             <label for="z2" class="z-a" >Enter Your Password</label><br>
+                            <input required type="password" id="z2" class="z-b" placeholder="* * * * * * *"><br>
+                            <input type="submit"  id="z-c" required>
+                        </form>
+                        <div style="font-size:15px;">
+                            By continuing, you agree to mvt's organic-items's Conditions of Use and Privacy Notice 
+                        </div> <hr>
+                        <div style="margin:4% 0%;font-weight: bold;">Buying For Work ?</div>
+                        <div id="b1">Create a free business account</div>
+                       
+                            
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

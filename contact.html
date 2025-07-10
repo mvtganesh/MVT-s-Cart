@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/mvt's logo1.png " >
+    <title>MVT's Cart</title>
+    <link rel="stylesheet" href="styles.css" >
+    <style>
+        .total{
+            background-image: url(assets/background-4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .grid-1{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 150px 150px 150px;
+            width:75%;
+            margin-left:auto;
+            margin-right:auto;
+            gap:5%;
+            padding-bottom:3%;
+            border-bottom:2px solid gray;
+
+        }
+        .grid-1-div{
+            border:2px inset gray;
+            height:100px;
+            border-radius: 20px;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            cursor: pointer;
+        }
+        .grid-1-div:hover{
+            box-shadow: 0px 0px 5px 4px silver;
+            background-color:rgb(255, 255, 246);
+        }
+        #grid-1-img{
+            width:100%;
+        }
+        #grid-1-img-div{
+            width:25%;
+        }
+        #grid-1-p{
+            font-weight:bold;
+            font-size: 20px;
+            padding-bottom:5%;
+        }
+        #grid-1-p:hover{
+            color:red;
+        }
+        #grid-1-p:active{
+            color:blue;
+        }
+        #grid-2-p{
+            color:gray;
+        }
+        #grid-2-p:hover{
+            color:lightcoral;
+        }
+        #grid-2-p:active{
+            color:blue;
+        }
+        #grid-div-link{
+            text-decoration: none;
+        }
+
+
+        #search{
+            width:60%;height:30px;border-radius:5px; padding-left:2%;margin-left:10%;border:2px solid gray;margin-bottom:30px;
+
+        }
+
+        .grid-2{
+            display:grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows:auto;
+            width:70%;
+            margin-left:10%;
+            border:3px inset gold;
+            margin-bottom:5%;
+            
+        }
+     
+        #a{
+            font-size:18px;
+            padding:1% 3% 1% 5%;
+            display: flex;
+            justify-content:flex-start;
+            background-color: rgb(198, 198, 198);
+           
+        }
+        #a:hover{
+            color:red;cursor: pointer;
+        }
+        #a:active{
+            color:blue;
+        }
+        #a:hover #z{
+            display: block;
+            color:black;
+        }
+   
+       #z{
+        display: none;
+        margin-left:200px;
+        margin-top:0px;
+        position: absolute;
+        top:1113px;
+        left:280px;
+        width:25%;
+       }
+       .main-topic{
+        font-size:30px;
+        cursor: pointer;
+       }
+       .main-topic:hover{
+        color:red;
+       }
+       .main-topic:active{
+        color:blue;
+       }
+       
+       .sub-topic{
+        color:goldenrod;
+       }
+       .sub-topic:hover{
+        color:red;
+       }
+       .sub-topic:active{
+        color:blue;
+       }
+
+        #para-1-1{
+            font-weight: bold;
+        }
+        #grid-2-div-3{
+            display:grid;
+            align-content: center;
+            justify-content: center;
+            padding-left:5%;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="total">
+        <div style="padding:5%  0% 3% 10%;font-weight: bold;font-size:30px;">Hello.what can we help you with ?</div>
+        <hr style="height:3px;background-color: gray;"  >
+        <div style="margin:2%  0% 3% 10%;font-weight: bold;font-size:25px;">Some things can do here</div>
+        <div class="grid-1">
+            <a href="login.html" id="grid-div-link" target="_blank" >
+            <div class="grid-1-div">
+                <div id="grid-1-img-div"><img src="assets/contact/1.png" id="grid-1-img" > </div>
+                <div>
+                    <div id="grid-1-p" > Your Order</div>
+                    <div id="grid-2-p">Track packages <br>Edit or Cancel order</div>
+                </div>    
+            </div>
+            </a>
+
+            <a href="login.html" id="grid-div-link" target="_blank" >
+            <div class="grid-1-div">
+                <div id="grid-1-img-div"><img src="assets/contact/2.png" id="grid-1-img" > </div>
+                <div>
+                    <div id="grid-1-p" >Returns and Refunds</div>
+                    <div id="grid-2-p">Return or exchange items <br> Print return mailing labels</div>
+                </div>    
+            </div>
+            </a>
+
+            <a href="login.html" id="grid-div-link" target="_blank" >
+            <div class="grid-1-div">
+                <div id="grid-1-img-div"><img src="assets/contact/3.png" id="grid-1-img" > </div>
+                <div>
+                    <div id="grid-1-p" > 	Manage Addresses</div>
+                    <div id="grid-2-p">Update your addresses <br> Add address, landmark details</div>
+                </div>    
+            </div>
+            </a>
+
+            <a href="login.html" id="grid-div-link" target="_blank" >
+            <div class="grid-1-div">
+                <div id="grid-1-img-div"><img src="assets/contact/4.png" id="grid-1-img" > </div>
+                <div>
+                    <div id="grid-1-p" > Your Order</div>
+                    <div id="grid-2-p">Track packages <br>Edit or Cancel order</div>
+                </div>    
+            </div>
+            </a>
+
+            <a href="login.html" id="grid-div-link" target="_blank" >
+            <div class="grid-1-div">
+                <div id="grid-1-img-div"><img src="assets/contact/5.png" id="grid-1-img" > </div>
+                <div>
+                    <div id="grid-1-p" >Manage Prime</div>
+                    <div id="grid-2-p">View your benefits <br> Membership details</div>
+                </div>    
+            </div>
+            </a>
+
+            <a href="login.html" id="grid-div-link" target="_blank" >
+            <div class="grid-1-div">
+                <div id="grid-1-img-div"><img src="assets/contact/1.png" id="grid-6-img" > </div>
+                <div>
+                    <div id="grid-1-p" >	Payment Settings</div>
+                    <div id="grid-2-p">edit payment methods <br> Change expired debit  card</div>
+                </div>    
+            </div>
+            </a>
+
+            <a href="login.html" id="grid-div-link" target="_blank" >
+            <div class="grid-1-div">
+                <div id="grid-1-img-div"><img src="assets/contact/7.png" id="grid-1-img" > </div>
+                <div>
+                    <div id="grid-1-p" >	Account Settings</div>
+                    <div id="grid-2-p">Change your email or password <br>Update login information</div>
+                </div>    
+            </div>
+            </a>
+           
+        </div>
+
+
+        <div style="font-size:25px;font-weight: bold;margin:3% 0% 2% 10%;">Find more solutions <span style="font-size:18px;"> Type something like, "question about a charge"</span></div>
+        
+        <input type="search" id="search" placeholder="Search" >
+
+        <hr >
+
+        <div style="font-size:25px;font-weight:bold;margin-left:10%;margin-top:2%;margin-bottom: 4%;">Browse Help Topics</div>
+    
+
+        <div class="grid-2">
+            <div id="grid-2-div-1">
+                <!-- grid-2-p-1 -->
+                 <div id="a">	&rarr; Recommended Topics 
+                    <p id="z"><span class="main-topic"> Learn how to...</span> <br>
+                        <span class="sub-topic">
+                        Tracking your Package 
+                        Product Troubleshooting - All Help Topics 
+                        Damaged and Defective Products - FAQ 
+                        Returns and Replacements - FAQ 
+                        Checking the Status of your Refund 
+                        Return Pick-up Issues 
+                        Late Shipments 
+                        Self-service video library
+                        Need more help
+                    </span></p>
+                </div>
+
+
+                 <div id="a">	&rarr; Shipping & Delivery
+                    <p id="z"><span class="main-topic"> For assisting you in your shopping journey</span>  <br> 
+                        <span class="sub-topic">Search and Browse for Items
+                        Ordering with Amazon - FAQ 
+                        Cancel Items or Orders
+                        About Items Fulfilled by Amazon
+                        About Seller Fulfilled Items
+                        About Gift Orders
+                        Installations
+                        More in Ordering
+                    </span></p>
+                </div>
+
+                  <div id="a">	&rarr; Returns, Refunds, Replacement
+                    <p id="z"><span class="main-topic"></span>  For information related to returns and refunds
+                                                            About Our Return Policies <br> 
+                        <span class="sub-topic">
+                                                
+                            Returns and Replacements - FAQ
+                            Add Photos - FAQ
+                            Product Troubleshooting - All Help Topics
+                            Damaged and Defective Products - FAQ
+                            How to schedule a Return
+                            Return Pick up and Self Ship Guidelines
+                            Refund Timelines
+                            Amazon.in Service Centre Replacement Policy - FAQ
+                            Wrong Product Delivered
+                            More in Returns & Refunds
+                    </span></p>
+                </div>
+
+                  <div id="a">	&rarr; Ordering
+                    <p id="z"><span class="main-topic"> For information related to mvt's@organic items</span>  <br> 
+                        <span class="sub-topic">
+                                            About Amazon Bazaar
+                    Supported Payment Methods
+                    Shipping Speeds and Charges
+                    How to schedule a return
+                    Damaged, defective or wrong product FAQs
+                    How to cancel an order
+                    How to check the status of refund
+                    Amazon Bazaar: Returns Policy
+                    Amazon Bazaar: Refund Policy
+                    </span></p>
+                </div>
+
+                  <div id="a">	&rarr; Managing Your Account
+                    <p id="z"><span class="main-topic"> Information on how you can <br> manage your account.</span>  <br> 
+                        <span class="sub-topic">
+                       
+                            Change Your Account Settings
+                            Reset Your Password
+                            What is Two-Step Verification?
+                            About Mobile Phone Number Accounts
+                            More in Managing Your Account
+                    </span></p>
+                </div>
+
+                  <div id="a">	&rarr;MVT's Cart Prime
+                    <p id="z"><span class="main-topic"> 
+                        All Devices & Digital Services Help</span>  <br> 
+                        <span class="sub-topic">
+                       
+                            Manage Your Content & Devices
+                            Ask the Digital and Device Community
+                            Ask the Digital and Device Community 
+                    </span></p>
+                </div>
+
+                  <div id="a"> 	&rarr; Payments & Pricing
+                    <p id="z"><span class="main-topic"> For information on available <br> payment options</span>  <br> 
+                        <span class="sub-topic">
+                                        
+                        Pay on Delivery
+                        EMI
+                        Accepted Payment Methods
+                        Payment Issues
+                        Resolve a Declined Payment
+                        More in Payment, Pricing & Promotions
+                    </span></p>
+                </div>
+
+                  <div id="a">	&rarr; MVT's cart-items Pay
+                    <p id="z"><span class="main-topic"> Amazon Business</span>  <br> 
+                        <span class="sub-topic">
+                       
+                        Get started with your business account
+                        About Amazon Business
+                        Registering your Business Account
+                        About GST Invoice
+                        Add people to your business account
+                        How to identify a product with GST invoice?
+                        How to download a GST invoice?
+                        Amazon Business - Frequently Asked Questions
+                        Use Switch Accounts
+                        More About Amazon Business
+                    </span></p>
+                </div>
+
+                  <div id="a">	&rarr; Product Troubleshooting
+                    <p id="z"><span class="main-topic">Troubleshooting FAQs</span>  <br> 
+                        <span class="sub-topic">
+                            Issues with Heaters (home)
+                            Issues with Kitchen Food Processors
+                            Issues with Smart TV
+                            Issues with Refrigerator
+                            Issues with Split AC
+                            Issues with Camera FAQs
+                            Issues with PC - Smart Watches
+                            Issues with Bluetooth Headsets
+                            Issues with Wireless - Smartphones
+                            Acoustic Drum - Setup (musical instrument)
+                                                            Issues with Personal Computer - Windows
+                                Video Games - Xbox One - troubleshooting
+                                Issues with Gimbals - Set up and Troubleshooting
+                                e Product Troubleshooting Help Topics
+                    </span></p>
+                </div>
+
+
+               
+
+            </div>
+           
+            <div id="grid-2-div-3">
+                <p>Try it Yourself</p>
+                <p>
+                    Track your order
+                    Manage Your Returns
+                    Check the Status of your Refund
+                    Change Your Language Preference
+                    Sign Up for Amazon Prime
+                    Using Amazon Pay balance
+                   View Amazon Pay Transactions
+                    Manage Your Payment Methods
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="total-footer">
+                <div class="footer-main">
+                    
+                        <div class="footer-grid">
+                            <div >
+                                <h2 id="footer-grid-div"> MVT Cart</h2>
+                                <p id="footer-content">Address: 60-49 Innomatics JNTUH Metro Near , HYD</p>
+                                <p id="footer-content">Phone: +91 9491234205</p>
+                                <p id="footer-content">Email:mvtganesh1@gmail.com</p>
+                            </div>
+                            <div>     
+                                <h2 id="footer-grid-div">Useful Links</h2>
+                                <p id="footer-content">About Us</p>
+                                <p id="footer-content">About Our Shop</p>
+                                <p id="footer-content">Secure Shopping</p>
+                                <p id="footer-content">Delivery Information</p>
+                                <p id="footer-content">Prrivacy Policy</p>
+                                <p id="footer-content">Our Sitemap</p>
+                            </div>
+                            <div>
+                                <h1 id="footer-grid-div"> ` </h1>
+                                <p id="footer-content">Who We Are</p>
+                                <p id="footer-content">Our Services</p>
+                                <p id="footer-content">Projects</p>
+                                <P id="footer-content">Contact</P>
+                                <p id="footer-content">Innovation</p>
+                                <p id="footer-content">Testimonials</p>
+                            </div>
+                            <div>
+                                <h2 id="footer-grid-div">Join Our NewsLetter Now</h2>
+                                <p id="footer-content">Get E-mail updates about our latest shop  and special offers.</p>
+                                <form action="login.html" target="_blank">
+                                <input type="email" placeholder="Enter your mail" id="footer-mail" required></input>
+                                <button id="footer-subscribe" >Subscribe</button>
+                                </form>
+                                <div class="footer-media">
+                                <a href="https://www.facebook.com/" target="_blank"><div class="nav2" id="a3"><img src="assets/facebook.jpg" id="a4" > </div></a>  
+                              <a href="https://x.com/?lang=en-in" target="_blank"><div class="nav2" id="a5"><img src="assets/twitter.webp" id="a4"> </div></a>
+                               <a href="https://www.linkedin.com/in/m-v-t-ganesh-237726280?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEUiH0DTZRLGrnAw5sIJuoQ%3D%3D" target="_blank"> <div class="nav2" id="a6"><img src="assets/linkedin.webp" id="a4"> </div></a>
+                              <a href="https://www.bigbasket.com/" target="_blank">  <div class="nav2" id="a7"><img src="assets/bb.webp" id="a4" class="a4"> </div></a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                 <div class="footer-last-main">
+                        <div>Copyright ©2025 All rights reserved | This template is made with  by &#9829; <a href="index.html"  id="last-company" target="_blank" >MVT Cart</a></div>
+                        <div id="footer-last-img-div">
+                          <a  href="https://account.skrill.com/wallet/account/login"  target="_blank" > <img id="footer-last-img" src="assets/sponcers/1.png"  ></a>
+                           <a href="https://coinmarketcap.com/currencies/bitcoin/" target="_blank"> <img id="footer-last-img" src="assets/sponcers/2.webp"></a> 
+                            <a href="https://www.sliceit.com/" target="_blank"> <img id="footer-last-img" src="assets/sponcers/3.png"></a>
+                            <a href="https://www.paypal.com/in/home?_sessionID=i1HZfz4-lE5rhqoS385h9Knse9BK8_fy&Z3JncnB0=" target="_blank"> <img id="footer-last-img" src="assets/sponcers/4.jpg"></a>
+                            <a href="https://www.visa.co.in/" target="_blank"> <img id="footer-last-img" src="assets/sponcers/5.png">    </a>
+                        </div>
+                </div>
+
+        </div>
+    </div>
+</body>
+</html>
