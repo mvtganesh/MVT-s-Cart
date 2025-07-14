@@ -50,9 +50,7 @@ Media	Images and embedded product video
 
 
 
-📁 Project Structure
-bash
-Copy code
+📁 Project Structur
 
 
 ├── index.html         # Main Home page
